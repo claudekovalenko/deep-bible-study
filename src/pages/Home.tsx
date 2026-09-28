@@ -59,6 +59,10 @@ export function Home() {
         <div className="notice">
           {stats!.lastBackupAt ? `Last backup ${relative(stats!.lastBackupAt)}.` : 'You haven’t backed up yet.'} Your study lives on this
           device — <Link to="/settings">download a backup</Link> so it is safe for years to come.
+          <div className="muted small">
+            This reminder only appears when you open the app — it can’t send push notifications. A recurring reminder on your phone’s
+            calendar is the surest way to remember.
+          </div>
         </div>
       )}
 
