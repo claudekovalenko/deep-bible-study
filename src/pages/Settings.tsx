@@ -131,6 +131,11 @@ export function Settings() {
           Last backup: {lastBackup ? fmtDateTime(lastBackup) : 'never'}. Restoring merges with what is here; the newer copy of any entry
           wins.
         </p>
+        <p className="muted small">
+          The app reminds you to back up after two weeks, but only when you open it — as a home-screen web app it can’t send push
+          notifications. For a reminder you won’t miss, set a recurring event (say, the first Sunday of each month) in your phone’s
+          calendar or reminders app.
+        </p>
         {status && <div className="notice">{status}</div>}
         <div className="row">
           <span>
